@@ -23,16 +23,16 @@ const reactionSchema = new Schema(
     },
     {
         toJSON: {
-            virtuals: true
+            virtuals: true,
         },
         id: false
     }
-)
+);
 
-reactionSchema.virtual('formattedCreatedAt').get(function(){
+reactionSchema.virtual('formattedDate').get(function () {
     return this.createdAt.toLocaleString();
-})
+});
 
-reactionSchema.set('_id', false)
+reactionSchema.set('_id', false);
 
 module.exports = reactionSchema;
