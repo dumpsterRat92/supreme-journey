@@ -116,6 +116,8 @@ Contributions are welcome! Please feel free to submit a pull request or open iss
 4. Push to the branch: `git push origin feature/new-feature`.
 5. Submit a pull request.
 
+   Credit to Vini for letting me reverse engeneer his code to get started.
+
 ## License
 
 This project is licensed under the MIT License
