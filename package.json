@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VZachary13/expert-waddle.git"
+    "url": "git+https://github.com/dumpsterRat92/supreme-journey.git"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -18,10 +18,10 @@
   "keywords": [
     "bingus"
   ],
-  "author": "VZ13",
+  "author": "DumpsterRat92",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VZachary13/expert-waddle/issues"
+    "url": "https://github.com/dumpsterRat92/supreme-journey/issues"
   },
-  "homepage": "https://github.com/VZachary13/expert-waddle#readme"
+  "homepage": "https://github.com/dumpsterRat92/supreme-journey"
 }
