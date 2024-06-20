@@ -1,4 +1,4 @@
-# Social Media API
+# Social Net API
 
 Welcome to the documentation for the Social Media API! This API is designed to handle the backend of a fictional social media platform, facilitating interactions with user data and posts. It is built using Node.js, Express, and MongoDB.
 
