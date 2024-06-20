@@ -7,7 +7,7 @@ module.exports = {
             const thoughts = await Thought.find();
 
             if(!thoughts){
-                return res.status(404).json({ message: 'No users found' })
+                return res.status(404).json({ message: 'None found' })
             }
 
             res.status(200).json(thoughts);
@@ -22,7 +22,7 @@ module.exports = {
             const thought = await Thought.findById(req.params.thoughtId);
 
             if (!thought) {
-                return res.status(404).json({ message: 'No thought found with this ID' })
+                return res.status(404).json({ message: 'None found with this ID' })
             }
 
             res.status(200).json(thought);
@@ -42,7 +42,7 @@ module.exports = {
             )
 
             if (!user) {
-                return res.status(404).json({ message: 'Thought created but found no user with that username' })
+                return res.status(404).json({ message: 'Found no user with that username but thought created.' })
             }
             res.status(201).json({thought, user})
         } catch (err) {
@@ -59,7 +59,7 @@ module.exports = {
             );
             
             if(!thought){
-                return res.status(404).json({ message: 'No thought found with this ID' })
+                return res.status(404).json({ message: 'None with this ID' })
             };
 
             res.status(200).json(thought);
@@ -73,7 +73,7 @@ module.exports = {
             const thought = await Thought.findByIdAndDelete({ _id: req.params.thoughtId })
             
             if (!thought) {
-                return res.status(404).json({ message: 'No Thought with this id' })
+                return res.status(404).json({ message: 'None with this id' })
             }
 
             const user = await User.findOneAndUpdate(
@@ -83,10 +83,10 @@ module.exports = {
             )
 
             if (!user) {
-                return res.status(404).json({ message: 'Thought deleted but no user found with this id' })
+                return res.status(404).json({ message: 'No user found with this id' })
             }
 
-            res.status(200).json({ message: 'Thought deleted successfully', user})
+            res.status(200).json({ message: 'Thought deleted', user})
 
         } catch (err) {
             console.log(err);
@@ -102,7 +102,7 @@ module.exports = {
             )
 
             if (!thought) {
-                return res.status(404).json({ message: 'No thoughts with this is id' })
+                return res.status(404).json({ message: 'None with this is id' })
             }
 
             res.status(201).json(thought)
